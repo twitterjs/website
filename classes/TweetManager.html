@@ -2731,6 +2731,9 @@ img {
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 					<a href="TweetManager.html#add" class="tsd-kind-icon">add</a>
 				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="TweetManager.html#count" class="tsd-kind-icon">count</a>
+				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a href="TweetManager.html#fetch" class="tsd-kind-icon">fetch</a>
 				</li>
@@ -2750,10 +2753,13 @@ img {
 					<a href="TweetManager.html#resolve" class="tsd-kind-icon">resolve</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a href="TweetManager.html#resolveID" class="tsd-kind-icon">resolveID</a>
+					<a href="TweetManager.html#resolveId" class="tsd-kind-icon">resolve<wbr>Id</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="TweetManager.html#retweet" class="tsd-kind-icon">retweet</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="TweetManager.html#search" class="tsd-kind-icon">search</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="TweetManager.html#unRetweet" class="tsd-kind-icon">un<wbr>Retweet</a>
@@ -2815,14 +2821,16 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TweetManager.html#_fetchMultipleTweets" class="tsd-kind-icon">#fetch<wbr>Multiple<wbr>Tweets</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TweetManager.html#_fetchSingleTweet" class="tsd-kind-icon">#fetch<wbr>Single<wbr>Tweet</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="TweetManager.html#add" class="tsd-kind-icon">add</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#count" class="tsd-kind-icon">count</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="TweetManager.html#fetch" class="tsd-kind-icon">fetch</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#fetchLikedBy" class="tsd-kind-icon">fetch<wbr>Liked<wbr>By</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#fetchRetweetedBy" class="tsd-kind-icon">fetch<wbr>Retweeted<wbr>By</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#hide" class="tsd-kind-icon">hide</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#like" class="tsd-kind-icon">like</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="TweetManager.html#resolve" class="tsd-kind-icon">resolve</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="TweetManager.html#resolveID" class="tsd-kind-icon">resolveID</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="TweetManager.html#resolveId" class="tsd-kind-icon">resolve<wbr>Id</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#retweet" class="tsd-kind-icon">retweet</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#search" class="tsd-kind-icon">search</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#unRetweet" class="tsd-kind-icon">un<wbr>Retweet</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#unhide" class="tsd-kind-icon">unhide</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="TweetManager.html#unlike" class="tsd-kind-icon">unlike</a></li>
@@ -2844,7 +2852,7 @@ img {
 						<aside class="tsd-sources">
 							<p>Overrides <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L45">src/managers/TweetManager.ts:45</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L55">src/managers/TweetManager.ts:55</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2872,7 +2880,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#_holds">_holds</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/BaseManager.ts#L22">src/managers/BaseManager.ts:22</a></li>
+						<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/BaseManager.ts#L22">src/managers/BaseManager.ts:22</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2888,7 +2896,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#cache">cache</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/BaseManager.ts#L17">src/managers/BaseManager.ts:17</a></li>
+						<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/BaseManager.ts#L17">src/managers/BaseManager.ts:17</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2904,7 +2912,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#client">client</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/BaseManager.ts#L12">src/managers/BaseManager.ts:12</a></li>
+						<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/BaseManager.ts#L12">src/managers/BaseManager.ts:12</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2920,13 +2928,13 @@ img {
 				<a name="_editTweetReplyVisibility" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> #edit<wbr>Tweet<wbr>Reply<wbr>Visibility</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">#edit<wbr>Tweet<wbr>Reply<wbr>Visibility<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a>, isHidden<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetReplyHideUnhideResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">#edit<wbr>Tweet<wbr>Reply<wbr>Visibility<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a>, isHidden<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetReplyHideUnhideResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetReplyHideUnhideResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L292">src/managers/TweetManager.ts:292</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L365">src/managers/TweetManager.ts:365</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2938,7 +2946,7 @@ img {
 								<h5>isHidden: <span class="tsd-signature-type">boolean</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetReplyHideUnhideResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetReplyHideUnhideResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetReplyHideUnhideResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -2946,19 +2954,19 @@ img {
 				<a name="_fetchMultipleTweets" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> #fetch<wbr>Multiple<wbr>Tweets</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">#fetch<wbr>Multiple<wbr>Tweets<span class="tsd-signature-symbol">(</span>tweetIDs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/FetchTweetsOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FetchTweetsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Collection.html" class="tsd-signature-type" data-tsd-kind="Class">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">, </span><a href="Tweet.html" class="tsd-signature-type" data-tsd-kind="Class">Tweet</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">#fetch<wbr>Multiple<wbr>Tweets<span class="tsd-signature-symbol">(</span>tweetIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/FetchTweetsOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FetchTweetsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Collection.html" class="tsd-signature-type" data-tsd-kind="Class">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">, </span><a href="Tweet.html" class="tsd-signature-type" data-tsd-kind="Class">Tweet</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L266">src/managers/TweetManager.ts:266</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L339">src/managers/TweetManager.ts:339</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>tweetIDs: <span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">[]</span></h5>
+								<h5>tweetIds: <span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 							<li>
 								<h5>options: <a href="../interfaces/FetchTweetsOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FetchTweetsOptions</a></h5>
@@ -2972,19 +2980,19 @@ img {
 				<a name="_fetchSingleTweet" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> #fetch<wbr>Single<wbr>Tweet</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">#fetch<wbr>Single<wbr>Tweet<span class="tsd-signature-symbol">(</span>tweetID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/FetchTweetOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FetchTweetOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Tweet.html" class="tsd-signature-type" data-tsd-kind="Class">Tweet</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">#fetch<wbr>Single<wbr>Tweet<span class="tsd-signature-symbol">(</span>tweetId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/FetchTweetOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FetchTweetOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Tweet.html" class="tsd-signature-type" data-tsd-kind="Class">Tweet</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L247">src/managers/TweetManager.ts:247</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L320">src/managers/TweetManager.ts:320</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>tweetID: <span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span></h5>
+								<h5>tweetId: <span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span></h5>
 							</li>
 							<li>
 								<h5>options: <a href="../interfaces/FetchTweetOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FetchTweetOptions</a></h5>
@@ -3005,7 +3013,7 @@ img {
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#add">add</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/BaseManager.ts#L65">src/managers/BaseManager.ts:65</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/BaseManager.ts#L65">src/managers/BaseManager.ts:65</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3045,6 +3053,44 @@ img {
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="count" class="tsd-anchor"></a>
+				<h3>count</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/CountTweetsOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CountTweetsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="TweetsCountBook.html" class="tsd-signature-type" data-tsd-kind="Class">TweetsCountBook</a><span class="tsd-signature-symbol">, </span><a href="TweetCountBucket.html" class="tsd-signature-type" data-tsd-kind="Class">TweetCountBucket</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L292">src/managers/TweetManager.ts:292</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Fetches count of tweets matching a search query.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>query: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The query to match the tweets with</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/CountTweetsOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CountTweetsOptions</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The options for searching tweets</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="TweetsCountBook.html" class="tsd-signature-type" data-tsd-kind="Class">TweetsCountBook</a><span class="tsd-signature-symbol">, </span><a href="TweetCountBucket.html" class="tsd-signature-type" data-tsd-kind="Class">TweetCountBucket</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A tuple containing <a href="TweetsCountBook.html">TweetsCountBook</a> object and an array of <a href="TweetCountBucket.html">TweetCountBucket</a> objects representing the first page</p>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 				<a name="fetch" class="tsd-anchor"></a>
 				<h3>fetch</h3>
@@ -3055,7 +3101,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L78">src/managers/TweetManager.ts:78</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L88">src/managers/TweetManager.ts:88</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3093,7 +3139,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L221">src/managers/TweetManager.ts:221</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L229">src/managers/TweetManager.ts:229</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3125,7 +3171,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L192">src/managers/TweetManager.ts:192</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L202">src/managers/TweetManager.ts:202</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3151,13 +3197,13 @@ img {
 				<a name="hide" class="tsd-anchor"></a>
 				<h3>hide</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">hide<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetReplyHideUnhideResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">hide<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetReplyHideUnhideResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetReplyHideUnhideResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L138">src/managers/TweetManager.ts:138</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L148">src/managers/TweetManager.ts:148</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3174,8 +3220,8 @@ img {
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetReplyHideUnhideResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>A {@link TweetReplyHideUnhideResponse} object</p>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetReplyHideUnhideResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetReplyHideUnhideResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A <a href="TweetReplyHideUnhideResponse.html">TweetReplyHideUnhideResponse</a> object</p>
 					</li>
 				</ul>
 			</section>
@@ -3183,13 +3229,13 @@ img {
 				<a name="like" class="tsd-anchor"></a>
 				<h3>like</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">like<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetLikeResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">like<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetLikeResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetLikeResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L102">src/managers/TweetManager.ts:102</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L112">src/managers/TweetManager.ts:112</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3206,8 +3252,8 @@ img {
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetLikeResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>A {@link TweetLikeResponse} object</p>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetLikeResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetLikeResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A <a href="TweetLikeResponse.html">TweetLikeResponse</a> object</p>
 					</li>
 				</ul>
 			</section>
@@ -3222,7 +3268,7 @@ img {
 						<aside class="tsd-sources">
 							<p>Overrides <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#resolve">resolve</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L54">src/managers/TweetManager.ts:54</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L64">src/managers/TweetManager.ts:64</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3245,17 +3291,17 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-				<a name="resolveID" class="tsd-anchor"></a>
-				<h3>resolveID</h3>
+				<a name="resolveId" class="tsd-anchor"></a>
+				<h3>resolve<wbr>Id</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<li class="tsd-signature tsd-kind-icon">resolveID<span class="tsd-signature-symbol">(</span>tweetResolvable<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span></li>
+					<li class="tsd-signature tsd-kind-icon">resolve<wbr>Id<span class="tsd-signature-symbol">(</span>tweetResolvable<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Overrides <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#resolveID">resolveID</a></p>
+							<p>Overrides <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#resolveId">resolveId</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L66">src/managers/TweetManager.ts:66</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L76">src/managers/TweetManager.ts:76</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3281,13 +3327,13 @@ img {
 				<a name="retweet" class="tsd-anchor"></a>
 				<h3>retweet</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">retweet<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RetweetResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">retweet<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="RetweetResponse.html" class="tsd-signature-type" data-tsd-kind="Class">RetweetResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L156">src/managers/TweetManager.ts:156</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L166">src/managers/TweetManager.ts:166</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3304,8 +3350,46 @@ img {
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RetweetResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>A {@link RetweetResponse} object</p>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="RetweetResponse.html" class="tsd-signature-type" data-tsd-kind="Class">RetweetResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A <a href="RetweetResponse.html">RetweetResponse</a> object</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="search" class="tsd-anchor"></a>
+				<h3>search</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">search<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/SearchTweetsOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchTweetsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="SearchTweetsBook.html" class="tsd-signature-type" data-tsd-kind="Class">SearchTweetsBook</a><span class="tsd-signature-symbol">, </span><a href="Collection.html" class="tsd-signature-type" data-tsd-kind="Class">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">, </span><a href="Tweet.html" class="tsd-signature-type" data-tsd-kind="Class">Tweet</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L257">src/managers/TweetManager.ts:257</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Fetches tweets using a search query.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>query: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The query to match tweets with</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/SearchTweetsOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchTweetsOptions</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The options for searching tweets</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="SearchTweetsBook.html" class="tsd-signature-type" data-tsd-kind="Class">SearchTweetsBook</a><span class="tsd-signature-symbol">, </span><a href="Collection.html" class="tsd-signature-type" data-tsd-kind="Class">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-symbol">, </span><a href="Tweet.html" class="tsd-signature-type" data-tsd-kind="Class">Tweet</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A tuple containing <a href="SearchTweetsBook.html">SearchTweetsBook</a> object and a <a href="Collection.html">Collection</a> of <a href="Tweet.html">Tweet</a> objects representing the first page</p>
 					</li>
 				</ul>
 			</section>
@@ -3313,13 +3397,13 @@ img {
 				<a name="unRetweet" class="tsd-anchor"></a>
 				<h3>un<wbr>Retweet</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">un<wbr>Retweet<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemovedRetweetResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">un<wbr>Retweet<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="RemovedRetweetResponse.html" class="tsd-signature-type" data-tsd-kind="Class">RemovedRetweetResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L174">src/managers/TweetManager.ts:174</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L184">src/managers/TweetManager.ts:184</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3336,8 +3420,8 @@ img {
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemovedRetweetResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>A {@link RemovedRetweetResponse} object</p>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="RemovedRetweetResponse.html" class="tsd-signature-type" data-tsd-kind="Class">RemovedRetweetResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A <a href="RemovedRetweetResponse.html">RemovedRetweetResponse</a> object</p>
 					</li>
 				</ul>
 			</section>
@@ -3345,13 +3429,13 @@ img {
 				<a name="unhide" class="tsd-anchor"></a>
 				<h3>unhide</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">unhide<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetReplyHideUnhideResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">unhide<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetReplyHideUnhideResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetReplyHideUnhideResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L147">src/managers/TweetManager.ts:147</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L157">src/managers/TweetManager.ts:157</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3368,8 +3452,8 @@ img {
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetReplyHideUnhideResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>A {@link TweetReplyHideUnhideResponse} object</p>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetReplyHideUnhideResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetReplyHideUnhideResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A <a href="TweetReplyHideUnhideResponse.html">TweetReplyHideUnhideResponse</a> object</p>
 					</li>
 				</ul>
 			</section>
@@ -3377,13 +3461,13 @@ img {
 				<a name="unlike" class="tsd-anchor"></a>
 				<h3>unlike</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">unlike<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetUnlikeResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">unlike<span class="tsd-signature-symbol">(</span>targetTweet<span class="tsd-signature-symbol">: </span><a href="../modules.html#TweetResolvable" class="tsd-signature-type" data-tsd-kind="Type alias">TweetResolvable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetUnlikeResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetUnlikeResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/47bfe21/src/managers/TweetManager.ts#L120">src/managers/TweetManager.ts:120</a></li>
+								<li>Defined in <a href="https://github.com/twitterjs/twitter.js/blob/6eb17bf/src/managers/TweetManager.ts#L130">src/managers/TweetManager.ts:130</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3400,8 +3484,8 @@ img {
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweetUnlikeResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>A {@link TweetUnlikeResponse} object</p>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TweetUnlikeResponse.html" class="tsd-signature-type" data-tsd-kind="Class">TweetUnlikeResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A <a href="TweetUnlikeResponse.html">TweetUnlikeResponse</a> object</p>
 					</li>
 				</ul>
 			</section>
@@ -3424,10 +3508,11 @@ img {
 						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 					</ul>
 					<ul class="tsd-legend">
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 					</ul>
 				</div>
 			</div>
