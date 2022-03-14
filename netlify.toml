@@ -1,0 +1,5 @@
+# TODO: remove this file once the site is ready for github-pages deployment
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
