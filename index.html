@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta name="description" content="//TODO: website description" /> -->
+		<title>//TODO: website name</title>
+		<!-- Open Graph Meta Tags -->
+		<!-- <meta property="og:title" content="//TODO: website name" />
+		<meta property="og:description" content="//TODO: website description" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/assets/logo.png" /> -->
+		<!-- Theme Color Meta Tags -->
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="// TODO: white" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="//TODO: black" /> -->
+		<!-- Twitter Meta Tags -->
+		<!-- <meta name="twitter:title" content="//TODO: website name" />
+		<meta name="twitter:description" content="//TODO: website description" />
+		<meta name="twitter:image" content="//TODO: https://root-domain-name/assets/logo.png" />
+		<meta name="twitter:card" content="summary" /> -->
+		<script>
+			if (
+				localStorage.getItem('theme') === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+		</script>
+	</head>
+	<body class="custom-scrollbar bg-slate-200 dark:bg-slate-900">
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
+</html>
