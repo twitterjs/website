@@ -43,7 +43,7 @@ interface DocumentationTypeDefinitionParameter extends DocumentationParameter {
 	meta: DocumentationTypeDefinitionParameterMeta;
 }
 
-interface DocumentationProperty extends DocumentationParameter {}
+type DocumentationProperty = DocumentationParameter;
 type DocumentationTypeDefinitionProperty = DocumentationProperty;
 type DocumentationClassPropertyProperty = DocumentationProperty;
 

@@ -25,12 +25,20 @@ export function SidebarItems() {
 
 	return (
 		<div className='text-left'>
+			<div className='getting-started'>
+				<div className='pt-6 text-lg font-bold'>Getting Started</div>
+				<ul>
+					<li className='pt-2 pl-4 text-sm'>
+						<Link to='getting-started/general'>General</Link>
+					</li>
+				</ul>
+			</div>
 			<div className='classes'>
-				<div className='pt-6 text-xl font-bold uppercase'>Classes</div>
+				<div className='pt-6 text-lg font-bold'>Classes</div>
 				<ul>{createItemList('classes')}</ul>
 			</div>
 			<div className='typedefs'>
-				<div className='pt-6 text-xl font-bold uppercase'>Typedefs</div>
+				<div className='pt-6 text-lg font-bold'>Typedefs</div>
 				<ul>{createItemList('typedefs')}</ul>
 			</div>
 		</div>
