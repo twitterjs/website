@@ -24,7 +24,7 @@ export function Docs() {
 		const prevPath = location.pathname.split('/').slice(4);
 		if (selectedSourceId && selectedVersion)
 			prevPath.length
-				? navigate(`/docs/${selectedSourceId}/${selectedVersion}/${prevPath.join('/')}`)
+				? navigate(`/docs/${selectedSourceId}/${selectedVersion}/${prevPath.join('/')}${location.hash}`)
 				: navigate(`/docs/${selectedSourceId}/${selectedVersion}`);
 	}, [selectedSourceId, selectedVersion]);
 	return (

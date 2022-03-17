@@ -17,7 +17,7 @@ type DocumentationExternalMeta = DocumentationClassMeta;
 type DocumentationTypeDefinitionMeta = DocumentationClassMeta;
 type DocumentationTypeDefinitionParameterMeta = DocumentationClassMeta;
 
-interface DocumentationParameter {
+export interface DocumentationParameter {
 	name: string;
 	description?: string;
 	default: string;
@@ -35,7 +35,7 @@ interface DocumentationParameter {
 type DocumentationClassConstructorParameter = DocumentationParameter;
 type DocumentationClassEventParameter = DocumentationParameter;
 
-interface DocumentationClassMethodParameter extends DocumentationParameter {
+export interface DocumentationClassMethodParameter extends DocumentationParameter {
 	meta: DocumentationClassMethodParameterMeta;
 }
 
@@ -52,7 +52,7 @@ export interface DocumentationClassProperty extends DocumentationProperty {
 	meta: DocumentationClassMethodPropertyMeta;
 }
 
-interface DocumentationClassConstructor {
+export interface DocumentationClassConstructor {
 	name: string;
 	params?: DocumentationClassConstructorParameter[];
 }
