@@ -1,20 +1,22 @@
 import { DocumentationClassConstructor } from '../typings/Docs';
+import { CodeBlock } from './CodeBlock';
 import { ParameterTable } from './ParameterTable';
 
-export function ConstructorComponent({ constructorData }: ConstructorComponentPropsType) {
-	const { name, params } = constructorData;
+export function ClassConstructor({ constructorData, className }: ClassConstructorPropsType) {
+	const { params } = constructorData;
 
 	return (
 		<div className='grid grid-cols-1 gap-3'>
 			<h1 className='text-left text-xl font-extrabold'>Constructor</h1>
 			<div className='text-left'>
-				new {name}({params?.map(p => p.name).join(', ')})
+				<CodeBlock content={`new ${className}(${params?.map(p => p.name).join(', ')})`} language='javascript' />
 			</div>
 			<ParameterTable parametersData={params} />
 		</div>
 	);
 }
 
-export interface ConstructorComponentPropsType {
+export interface ClassConstructorPropsType {
 	constructorData: DocumentationClassConstructor;
+	className: string;
 }
