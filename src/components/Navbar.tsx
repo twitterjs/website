@@ -26,9 +26,14 @@ export function Navbar() {
 					<Link to='/docs' className='hover:text-gray-900 dark:hover:text-gray-100'>
 						Docs
 					</Link>
-					<Link to='/guide' className='hover:text-gray-900 dark:hover:text-gray-100'>
+					<a
+						href='https://twitterjs-guide.pages.dev'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='hover:text-gray-900 dark:hover:text-gray-100'
+					>
 						Guide
-					</Link>
+					</a>
 				</div>
 				<div className='hidden justify-end md:flex md:flex-1 md:gap-x-6 lg:gap-x-8'>
 					<a href='https://discord.gg/f5Pefuskx4' target='_blank' rel='noopener noreferrer'>
