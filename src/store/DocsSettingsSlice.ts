@@ -4,13 +4,15 @@ import { type SourceIdType, Sources } from '../data';
 interface DocsSettingsStateType {
 	selectedSourceId: string;
 	selectedVersion: string;
-	mobileNavIsVisible: boolean;
+	mobileNavbarIsVisible: boolean;
+	mobileSidebarIsVisible: boolean;
 }
 
 const initialState: DocsSettingsStateType = {
 	selectedSourceId: 'twitter.js',
 	selectedVersion: 'main',
-	mobileNavIsVisible: false,
+	mobileNavbarIsVisible: false,
+	mobileSidebarIsVisible: false,
 };
 
 export const docsSettingsSlice = createSlice({
@@ -24,15 +26,23 @@ export const docsSettingsSlice = createSlice({
 		changeSelectedVersion: (state, action: PayloadAction<string>) => {
 			state.selectedVersion = action.payload;
 		},
-		toggleMobileNavVisibility: state => {
-			state.mobileNavIsVisible = !state.mobileNavIsVisible;
+		toggleMobileNavbarVisibility: state => {
+			state.mobileNavbarIsVisible = !state.mobileNavbarIsVisible;
 		},
-		hideMobileNav: state => {
-			state.mobileNavIsVisible = false;
+		hideMobileNavbar: state => {
+			state.mobileNavbarIsVisible = false;
+		},
+		toggleMobileSidebarVisibility: state => {
+			state.mobileSidebarIsVisible = !state.mobileSidebarIsVisible;
 		},
 	},
 });
 
-export const { changeSelectedSource, changeSelectedVersion, toggleMobileNavVisibility, hideMobileNav } =
-	docsSettingsSlice.actions;
+export const {
+	changeSelectedSource,
+	changeSelectedVersion,
+	toggleMobileNavbarVisibility,
+	hideMobileNavbar,
+	toggleMobileSidebarVisibility,
+} = docsSettingsSlice.actions;
 export const docsSettingsReducer = docsSettingsSlice.reducer;

@@ -4,11 +4,11 @@ import { DiscordIcon } from '../assets/DiscordIcon';
 import { TwitterIcon } from '../assets/TwitterIcon';
 import { Link } from 'react-router-dom';
 import { useTypedDispatch, useTypedSelector } from '../store/Hooks';
-import { toggleMobileNavVisibility } from '../store/DocsSettingsSlice';
+import { toggleMobileNavbarVisibility } from '../store/DocsSettingsSlice';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
 
 export function Navbar() {
-	const { mobileNavIsVisible } = useTypedSelector(state => state.docsSettings);
+	const { mobileNavbarIsVisible } = useTypedSelector(state => state.docsSettings);
 	const dispatch = useTypedDispatch();
 
 	return (
@@ -42,15 +42,15 @@ export function Navbar() {
 					</a>
 					<ThemeToggle />
 				</div>
-				<div className='hover:cursor-pointer md:hidden' onClick={() => dispatch(toggleMobileNavVisibility())}>
-					{mobileNavIsVisible ? (
+				<div className='hover:cursor-pointer md:hidden' onClick={() => dispatch(toggleMobileNavbarVisibility())}>
+					{mobileNavbarIsVisible ? (
 						<XIcon className='flex h-9 w-9 dark:text-white' />
 					) : (
 						<MenuIcon className='flex h-9 w-9 dark:text-white' />
 					)}
 				</div>
 			</div>
-			{mobileNavIsVisible ? (
+			{mobileNavbarIsVisible ? (
 				<div id='mobile-nav' className='grid grid-cols-1 gap-6 py-4 text-center md:hidden'>
 					<div className='grid grid-cols-1 space-y-1 text-lg font-bold text-gray-500 dark:text-gray-400'>
 						<Link to='/' className='py-2 hover:text-gray-900 dark:hover:text-gray-100'>
