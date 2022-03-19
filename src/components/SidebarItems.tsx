@@ -16,7 +16,7 @@ export function SidebarItems() {
 		if (isLoading) return <>Loading...</>;
 		return data?.[itemType].map(item => {
 			return (
-				<li className='pt-2 pl-4 text-sm' key={item.name}>
+				<li className='pt-2 pl-3 text-sm' key={item.name}>
 					<Link to={`${itemType}/${item.name}`}>{item.name}</Link>
 				</li>
 			);
@@ -27,19 +27,19 @@ export function SidebarItems() {
 		<div className='text-left'>
 			<div className='getting-started'>
 				<div className='pt-6 text-lg font-bold'>Getting Started</div>
-				<ul>
-					<li className='pt-2 pl-4 text-sm'>
+				<ul className='space-y-1'>
+					<li className='pt-2 pl-3 text-sm'>
 						<Link to='getting-started/general'>General</Link>
 					</li>
 				</ul>
 			</div>
 			<div className='classes'>
 				<div className='pt-6 text-lg font-bold'>Classes</div>
-				<ul>{createItemList('classes')}</ul>
+				<ul className='space-y-1'>{createItemList('classes')}</ul>
 			</div>
 			<div className='typedefs'>
 				<div className='pt-6 text-lg font-bold'>Typedefs</div>
-				<ul>{createItemList('typedefs')}</ul>
+				<ul className='space-y-1'>{createItemList('typedefs')}</ul>
 			</div>
 		</div>
 	);

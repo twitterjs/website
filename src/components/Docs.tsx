@@ -34,7 +34,7 @@ export function Docs() {
 				<div className='custom-scrollbar fixed inset-0 top-16 right-auto z-20 hidden w-80 overflow-y-auto overflow-x-hidden px-4 pb-10 lg:block'>
 					<DocsSidebar />
 				</div>
-				<div id='mobile-sidebar' className='lg:hidden'>
+				<div id='mobile-sidebar' className='grid grid-cols-2 lg:hidden'>
 					<div
 						onClick={() => dispatch(toggleMobileSidebarVisibility())}
 						className='fixed right-0 mt-8 cursor-pointer rounded-l-3xl bg-blue-900 py-3 pr-2 pl-3'
@@ -46,7 +46,7 @@ export function Docs() {
 						)}
 					</div>
 					{mobileSidebarIsVisible ? (
-						<div className='custom-scrollbar fixed inset-0 top-16 right-auto w-80 overflow-y-auto overflow-x-hidden bg-slate-200 px-4 pb-10 dark:bg-slate-900'>
+						<div className='custom-scrollbar fixed inset-0 top-16 right-auto w-3/4 overflow-y-auto overflow-x-hidden bg-slate-200 px-4 pb-10 dark:bg-slate-900'>
 							<DocsSidebar />
 						</div>
 					) : (

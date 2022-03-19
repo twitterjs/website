@@ -35,6 +35,9 @@ export const docsSettingsSlice = createSlice({
 		toggleMobileSidebarVisibility: state => {
 			state.mobileSidebarIsVisible = !state.mobileSidebarIsVisible;
 		},
+		hideMobileSidebar: state => {
+			state.mobileSidebarIsVisible = false;
+		},
 	},
 });
 
@@ -44,5 +47,6 @@ export const {
 	toggleMobileNavbarVisibility,
 	hideMobileNavbar,
 	toggleMobileSidebarVisibility,
+	hideMobileSidebar,
 } = docsSettingsSlice.actions;
 export const docsSettingsReducer = docsSettingsSlice.reducer;
