@@ -11,7 +11,10 @@ export function ClassConstructor({ constructorData, className }: ClassConstructo
 			<div className='text-left'>
 				<CodeBlock content={`new ${className}(${params?.map(p => p.name).join(', ')})`} language='javascript' />
 			</div>
-			<ParameterTable parametersData={params} />
+			<div>
+				<h1 className='mb-2 text-left font-bold'>Parameters</h1>
+				<ParameterTable parametersData={params} />
+			</div>
 		</div>
 	);
 }

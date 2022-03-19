@@ -138,7 +138,7 @@ interface DocumentationLink {
 		| string;
 }
 
-interface DocumentationTypeDefinition {
+export interface DocumentationTypeDefinition {
 	name: string;
 	description: string;
 	access?: string;

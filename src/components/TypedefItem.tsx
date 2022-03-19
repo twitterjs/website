@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom';
 import { Sources, type SourceIdType } from '../data';
 import { useGetDocsQuery } from '../store/DocsSlice';
 import { useTypedSelector } from '../store/Hooks';
+import { TypedefHeading } from './TypedefHeading';
+import { TypedefProperties } from './TypedefProperties';
 
 export function TypedefItem() {
 	const { selectedSourceId, selectedVersion } = useTypedSelector(state => state.docsSettings);
@@ -13,10 +15,13 @@ export function TypedefItem() {
 	const { typedefName } = useParams<{ typedefName: string }>();
 	const typedefItem = data?.typedefs.find(t => t.name === typedefName);
 
-	return (
-		<div>
-			<h1 className='bold text-xl'>{typedefItem?.name}</h1>
-			<p>{typedefItem?.description}</p>
+	return typedefItem ? (
+		<div className='grid grid-cols-1 gap-6'>
+			<TypedefHeading typedefItem={typedefItem} />
+			<p className='flex justify-start text-left'>{typedefItem.description}</p>
+			<TypedefProperties typedefItem={typedefItem} />
 		</div>
+	) : (
+		<>Unable to fetch details about {typedefName} typedef</>
 	);
 }

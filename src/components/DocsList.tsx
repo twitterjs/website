@@ -12,7 +12,7 @@ export function DocsList() {
 							return (
 								<Link
 									key={sourceId}
-									className='h-60 w-80 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 p-4 transition duration-200 ease-in-out hover:scale-105 dark:from-blue-900 dark:via-indigo-900 dark:to-purple-900'
+									className='rounded-lg bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 pl-4 pt-4 pb-20 pr-20 transition duration-200 ease-in-out hover:scale-105 dark:from-blue-900 dark:via-indigo-900 dark:to-purple-900'
 									to={`${sourceId}/${source.defaultVersion}`}
 								>
 									<p className='text-left text-lg font-bold text-white'>{sourceId}</p>

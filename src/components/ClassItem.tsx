@@ -44,6 +44,6 @@ export function ClassItem() {
 			<ClassMembers classItem={classItem} />
 		</div>
 	) : (
-		<>Unable to find details about the requested class</>
+		<>Unable to find details about {className} class</>
 	);
 }

@@ -6,7 +6,7 @@ export function ParameterTable({ parametersData }: ParameterTablePropsType) {
 			<table className='min-w-full'>
 				<thead>
 					<tr className='bg-zinc-900 text-gray-300'>
-						{['Parameter', 'Type', 'Description'].map(h => {
+						{['Name', 'Type', 'Description'].map(h => {
 							return (
 								<th className='p-4' key={h}>
 									{h}
