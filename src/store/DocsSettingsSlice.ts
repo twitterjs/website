@@ -1,4 +1,5 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
+import { ThemeType } from '../components/ThemeToggle';
 import { type SourceIdType, Sources } from '../data';
 
 interface DocsSettingsStateType {
@@ -6,6 +7,7 @@ interface DocsSettingsStateType {
 	selectedVersion: string;
 	mobileNavbarIsVisible: boolean;
 	mobileSidebarIsVisible: boolean;
+	currentTheme: ThemeType;
 }
 
 const initialState: DocsSettingsStateType = {
@@ -13,6 +15,7 @@ const initialState: DocsSettingsStateType = {
 	selectedVersion: 'main',
 	mobileNavbarIsVisible: false,
 	mobileSidebarIsVisible: false,
+	currentTheme: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
 };
 
 export const docsSettingsSlice = createSlice({
@@ -38,6 +41,9 @@ export const docsSettingsSlice = createSlice({
 		hideMobileSidebar: state => {
 			state.mobileSidebarIsVisible = false;
 		},
+		setCurrentTheme: (state, action: PayloadAction<ThemeType>) => {
+			state.currentTheme = action.payload;
+		},
 	},
 });
 
@@ -48,5 +54,6 @@ export const {
 	hideMobileNavbar,
 	toggleMobileSidebarVisibility,
 	hideMobileSidebar,
+	setCurrentTheme,
 } = docsSettingsSlice.actions;
 export const docsSettingsReducer = docsSettingsSlice.reducer;

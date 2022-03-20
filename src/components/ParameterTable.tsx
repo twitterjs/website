@@ -1,3 +1,4 @@
+import { CheckIcon } from '@heroicons/react/outline';
 import type { DocumentationParameter } from '../typings/Docs';
 
 export function ParameterTable({ parametersData }: ParameterTablePropsType) {
@@ -22,7 +23,19 @@ export function ParameterTable({ parametersData }: ParameterTablePropsType) {
 								key={p.name}
 								className='border-y bg-blue-900/30 text-gray-300 first:border-t-0 last:border-b-0 dark:border-black/30'
 							>
-								<td className='p-4'>{p.name}</td>
+								<td className='p-4'>
+									{p.name}
+									{p.optional ? (
+										<></>
+									) : (
+										<span className='has-tooltip cursor-pointer'>
+											<span className='tooltip -mt-8 -ml-6 rounded-lg bg-zinc-900 py-2 px-3 text-sm text-white transition duration-100 ease-in-out'>
+												Required
+											</span>
+											<CheckIcon className='inline w-5 pl-1' />
+										</span>
+									)}
+								</td>
 								<td className='p-4'>{p.type}</td>
 								<td className='p-4'>{p.description}</td>
 							</tr>

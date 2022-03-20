@@ -9,7 +9,10 @@ export function HeroBanner() {
 				with twitter.js &#8212; A Node.js and TypeScript library for interacting with Twitter API
 			</p>
 			<div className='flex flex-row justify-center gap-x-6'>
-				<a href='/installation' className='rounded-md bg-blue-800 px-6 py-3 text-base font-medium text-gray-100'>
+				<a
+					href='docs/twitter.js/main/getting-started/general'
+					className='rounded-md bg-blue-800 px-6 py-3 text-base font-medium text-gray-100'
+				>
 					Get Started
 				</a>
 			</div>

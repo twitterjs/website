@@ -1,15 +1,14 @@
-// TODO: make theme data a global state
-import { useState, type MouseEvent } from 'react';
 import { SunIcon, MoonIcon } from '@heroicons/react/outline';
+import { useTypedDispatch, useTypedSelector } from '../store/Hooks';
+import { setCurrentTheme } from '../store/DocsSettingsSlice';
 
 export function ThemeToggle({ height, width }: ThemeTogglePropsType) {
-	const [currentTheme, setCurrentTheme] = useState<ThemeType>(
-		document.documentElement.classList.contains('dark') ? 'dark' : 'light',
-	);
+	const { currentTheme } = useTypedSelector(state => state.docsSettings);
+	const dispatch = useTypedDispatch();
 
-	const toggleTheme = (event: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
+	const toggleTheme = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		event.preventDefault();
-		const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+		const newTheme: ThemeType = currentTheme === 'light' ? 'dark' : 'light';
 		if (newTheme === 'dark') {
 			document.documentElement.classList.add('dark');
 			localStorage.setItem('theme', 'dark');
@@ -17,7 +16,7 @@ export function ThemeToggle({ height, width }: ThemeTogglePropsType) {
 			document.documentElement.classList.remove('dark');
 			localStorage.setItem('theme', 'light');
 		}
-		setCurrentTheme(newTheme);
+		dispatch(setCurrentTheme(newTheme));
 	};
 
 	return (
