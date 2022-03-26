@@ -14,7 +14,7 @@ export function ClassMembers({ classItem }: ClassMembersPropsType) {
 						{classItem.props.map(p => {
 							return (
 								<li className='space-y-4 py-6 text-left' key={scopedName(p)}>
-									<h1 className='text-blue-800 dark:text-blue-400' id={p.name}>
+									<h1 className='text-blue-800 dark:text-blue-400' id={scopedName(p)}>
 										<Link to={`#${scopedName(p)}`}>.{p.name}</Link>
 									</h1>
 									<div className='space-y-4'>
