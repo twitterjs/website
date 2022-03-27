@@ -1,19 +1,55 @@
 {
-  "name": "twitter.js-website",
-  "version": "0.0.1",
-  "description": "The documentation website for twitter.js",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/twitterjs/website.git"
-  },
-  "author": "Shubham Parihar <shubhamparihar391@gmail.com>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/twitterjs/website/issues"
-  },
-  "homepage": "https://github.com/twitterjs/website#readme"
+	"name": "twitter.js-website",
+	"version": "0.0.1",
+	"private": true,
+	"description": "The documentation website for twitter.js",
+	"author": "Shubham Parihar <shubhamparihar391@gmail.com>",
+	"scripts": {
+		"dev": "vite --port 6969",
+		"dev:open": "vite --port 6969 --open",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+		"format:check": "prettier . --check",
+		"format:fix": "prettier . --write"
+	},
+	"dependencies": {
+		"@heroicons/react": "^1.0.6",
+		"@reduxjs/toolkit": "^1.8.0",
+		"highlight.js": "^11.5.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-redux": "^7.2.6",
+		"react-router-dom": "^6.2.2",
+		"semver": "^7.3.5"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.43",
+		"@types/react-dom": "^17.0.14",
+		"@types/semver": "^7.3.9",
+		"@typescript-eslint/eslint-plugin": "^5.16.0",
+		"@typescript-eslint/parser": "^5.16.0",
+		"@vitejs/plugin-react": "^1.2.0",
+		"autoprefixer": "^10.4.4",
+		"eslint": "^8.12.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-react": "^7.29.4",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"postcss": "^8.4.12",
+		"prettier": "^2.6.1",
+		"prettier-plugin-tailwindcss": "^0.1.8",
+		"tailwindcss": "^3.0.23",
+		"typescript": "^4.6.3",
+		"vite": "^2.8.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/twitterjs/website.git"
+	},
+	"bugs": {
+		"url": "https://github.com/twitterjs/website/issues"
+	},
+	"license": "Apache-2.0",
+	"homepage": "https://github.com/twitterjs/website#readme"
 }
