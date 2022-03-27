@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { Sources, type SourceIdType } from '../data';
-import { useGetDocsQuery } from '../store/DocsSlice';
-import { useTypedSelector } from '../store/Hooks';
+import { useGetDocsQuery } from '../store/DocsApi';
+import { useTypedSelector } from '../store/Store';
 import { TypedefHeading } from './TypedefHeading';
 import { TypedefProperties } from './TypedefProperties';
 

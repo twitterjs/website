@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { DocumentationClass } from '../typings/Docs';
-import { scopedName } from '../util/scopedName';
+import type { DocumentationClass } from '../typings/Docs';
+import { scopedName } from '../util';
 
 export function ClassOverview({ classItem }: ClassOverviewPropsType) {
 	return (

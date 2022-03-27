@@ -5,13 +5,13 @@ import { StrictMode } from 'react';
 import { store } from './store/Store';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import { ScrollToTop } from './components/ScrollToTop';
+import { Reset } from './components/Reset';
 
 render(
 	<StrictMode>
 		<Provider store={store}>
 			<BrowserRouter>
-				<ScrollToTop />
+				<Reset />
 				<App />
 			</BrowserRouter>
 		</Provider>

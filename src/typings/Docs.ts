@@ -107,11 +107,9 @@ export interface DocumentationCustomFile {
 }
 
 interface DocumentationCustom {
-	[key: string]: {
-		name: string;
-		files: {
-			[key: string]: DocumentationCustomFile;
-		};
+	name: string;
+	files: {
+		[key: string]: DocumentationCustomFile;
 	};
 }
 
@@ -158,7 +156,7 @@ export type ParameterUnion =
 
 export interface Documentation {
 	classes: DocumentationClass[];
-	custom: DocumentationCustom[];
+	custom: Record<string, DocumentationCustom>;
 	externals: DocumentationExternal[];
 	global: string;
 	interfaces: DocumentationInterface[];

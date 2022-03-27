@@ -1,4 +1,4 @@
-import { DocumentationTypeDefinition } from '../typings/Docs';
+import type { DocumentationTypeDefinition } from '../typings/Docs';
 import { ParameterTable } from './ParameterTable';
 
 export function TypedefProperties({ typedefItem }: TypedefPropertiesPropsType) {

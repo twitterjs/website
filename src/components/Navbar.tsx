@@ -3,9 +3,9 @@ import { GithubIcon } from '../assets/GithubIcon';
 import { DiscordIcon } from '../assets/DiscordIcon';
 import { TwitterIcon } from '../assets/TwitterIcon';
 import { Link } from 'react-router-dom';
-import { useTypedDispatch, useTypedSelector } from '../store/Hooks';
 import { toggleMobileNavbarVisibility } from '../store/DocsSettingsSlice';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
+import { useTypedSelector, useTypedDispatch } from '../store/Store';
 
 export function Navbar() {
 	const { mobileNavbarIsVisible } = useTypedSelector(state => state.docsSettings);

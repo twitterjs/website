@@ -1,6 +1,6 @@
 import { SunIcon, MoonIcon } from '@heroicons/react/outline';
-import { useTypedDispatch, useTypedSelector } from '../store/Hooks';
 import { setCurrentTheme } from '../store/DocsSettingsSlice';
+import { useTypedSelector, useTypedDispatch } from '../store/Store';
 
 export function ThemeToggle({ height, width }: ThemeTogglePropsType) {
 	const { currentTheme } = useTypedSelector(state => state.docsSettings);

@@ -1,4 +1,4 @@
-import { DocumentationClassConstructor } from '../typings/Docs';
+import type { DocumentationClassConstructor } from '../typings/Docs';
 import { CodeBlock } from './CodeBlock';
 import { ParameterTable } from './ParameterTable';
 

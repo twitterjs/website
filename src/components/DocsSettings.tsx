@@ -1,7 +1,7 @@
 import { useGetVersionsQuery } from '../hooks/Hooks';
 import { Sources } from '../data';
-import { useTypedDispatch, useTypedSelector } from '../store/Hooks';
 import { changeSelectedSource, changeSelectedVersion } from '../store/DocsSettingsSlice';
+import { useTypedSelector, useTypedDispatch } from '../store/Store';
 
 export function DocsSettings() {
 	const { selectedSourceId, selectedVersion } = useTypedSelector(state => state.docsSettings);

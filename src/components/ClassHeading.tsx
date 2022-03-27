@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useTypedSelector } from '../store/Hooks';
-import { DocumentationClass } from '../typings/Docs';
+import { useTypedSelector } from '../store/Store';
+import type { DocumentationClass } from '../typings/Docs';
 
 export function ClassHeading({ classItem }: ClassHeadingPropsType) {
 	const { selectedSourceId, selectedVersion } = useTypedSelector(state => state.docsSettings);

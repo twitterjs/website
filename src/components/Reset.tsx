@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { hideMobileNavbar, hideMobileSidebar } from '../store/DocsSettingsSlice';
-import { useTypedDispatch } from '../store/Hooks';
+import { useTypedDispatch } from '../store/Store';
 
-export function ScrollToTop() {
+export function Reset() {
 	const location = useLocation();
 	const dispatch = useTypedDispatch();
 

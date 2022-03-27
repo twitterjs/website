@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useTypedSelector } from '../store/Hooks';
+import { useTypedSelector } from '../store/Store';
 import { DocumentationTypeDefinition } from '../typings/Docs';
 
 export function TypedefHeading({ typedefItem }: TypedefHeadingPropsType) {

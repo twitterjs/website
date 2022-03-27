@@ -1,19 +1,12 @@
 import { skipToken } from '@reduxjs/toolkit/dist/query';
-import type { DocsSource } from '../data/DocsSource';
 import { SourceIdType, Sources } from '../data';
-import { useGetBranchesQuery, useGetTagsQuery } from '../store/VersionsSlice';
+import { useGetBranchesQuery, useGetTagsQuery } from '../store/GithubApi';
 import { major, minor, patch, valid } from 'semver';
-
-export function useCombinedVersions(docsSource: DocsSource) {
-	const { data: branches, isSuccess } = useGetBranchesQuery(docsSource.sourceRepo);
-	const { data: tags } = useGetTagsQuery(isSuccess ? docsSource.sourceRepo : skipToken);
-
-	return { branches, tags };
-}
 
 export function useGetVersionsQuery(sourceId: string) {
 	const docsSource = Sources[sourceId as SourceIdType];
-	const { branches, tags } = useCombinedVersions(docsSource);
+	const { data: branches, isSuccess } = useGetBranchesQuery(docsSource.sourceRepo);
+	const { data: tags } = useGetTagsQuery(isSuccess ? docsSource.sourceRepo : skipToken);
 
 	const versions: Array<string> = [docsSource.defaultVersion];
 	const latestPatches: { [key: string]: number } = {};

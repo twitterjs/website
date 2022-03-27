@@ -10,7 +10,9 @@ export function HeroBanner() {
 			</p>
 			<div className='flex flex-row justify-center gap-x-6'>
 				<a
-					href='docs/twitter.js/main/getting-started/general'
+					href='https://twitterjs-guide.pages.dev/tutorial/installation'
+					target='_blank'
+					rel='noopener noreferrer'
 					className='rounded-md bg-blue-800 px-6 py-3 text-base font-medium text-gray-100'
 				>
 					Get Started

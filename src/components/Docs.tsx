@@ -1,12 +1,12 @@
 import { Footer } from './Footer';
 import { DocsSidebar } from './DocsSidebar';
 import { DocsMain } from './DocsMain';
-import { useTypedDispatch, useTypedSelector } from '../store/Hooks';
 import { useEffect } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { changeSelectedSource, changeSelectedVersion, toggleMobileSidebarVisibility } from '../store/DocsSettingsSlice';
 import { Sources } from '../data';
 import { ArrowCircleLeftIcon, ArrowCircleRightIcon } from '@heroicons/react/outline';
+import { useTypedSelector, useTypedDispatch } from '../store/Store';
 
 export function Docs() {
 	const location = useLocation();
@@ -16,7 +16,6 @@ export function Docs() {
 	const dispatch = useTypedDispatch();
 
 	useEffect(() => {
-		navigate(location.pathname);
 		if (source && Object.keys(Sources).includes(source)) dispatch(changeSelectedSource(source));
 		if (version) dispatch(changeSelectedVersion(version));
 	}, []);
@@ -28,6 +27,7 @@ export function Docs() {
 				? navigate(`/docs/${selectedSourceId}/${selectedVersion}/${prevPath.join('/')}${location.hash}`)
 				: navigate(`/docs/${selectedSourceId}/${selectedVersion}`);
 	}, [selectedSourceId, selectedVersion]);
+
 	return (
 		<>
 			<div className='relative mt-16 flex text-center text-gray-600 dark:text-gray-400'>
