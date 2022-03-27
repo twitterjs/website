@@ -4,16 +4,16 @@ import { render } from 'react-dom';
 import { StrictMode } from 'react';
 import { store } from './store/Store';
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Reset } from './components/Reset';
 
 render(
 	<StrictMode>
 		<Provider store={store}>
-			<BrowserRouter>
+			<HashRouter>
 				<Reset />
 				<App />
-			</BrowserRouter>
+			</HashRouter>
 		</Provider>
 	</StrictMode>,
 	document.getElementById('root'),
