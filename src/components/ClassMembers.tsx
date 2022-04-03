@@ -9,7 +9,7 @@ export function ClassMembers({ classItem }: ClassMembersPropsType) {
 		<div className='grid grid-cols-1 gap-8'>
 			{classItem.props?.length ? (
 				<div>
-					<h1 className='text-left text-xl font-extrabold'>Properties</h1>
+					<h1 className='text-left text-xl font-extrabold text-black dark:text-gray-300'>Properties</h1>
 					<ul className='divide-y dark:divide-slate-800/90'>
 						{classItem.props.map(p => {
 							return (
@@ -33,7 +33,7 @@ export function ClassMembers({ classItem }: ClassMembersPropsType) {
 			)}
 			{classItem.methods?.length ? (
 				<div>
-					<h1 className='text-left text-xl font-extrabold'>Methods</h1>
+					<h1 className='text-left text-xl font-extrabold text-black dark:text-gray-300'>Methods</h1>
 					<ul className='divide-y dark:divide-slate-800/90'>
 						{classItem.methods.map(m => {
 							return (

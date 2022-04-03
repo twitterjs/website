@@ -7,12 +7,11 @@ export function ClassConstructor({ constructorData, className }: ClassConstructo
 
 	return (
 		<div className='grid grid-cols-1 gap-3'>
-			<h1 className='text-left text-xl font-extrabold'>Constructor</h1>
+			<h1 className='text-left text-xl font-extrabold text-black dark:text-gray-300'>Constructor</h1>
 			<div className='text-left'>
 				<CodeBlock content={`new ${className}(${params?.map(p => p.name).join(', ')})`} language='javascript' />
 			</div>
 			<div>
-				<h1 className='mb-2 text-left font-bold'>Parameters</h1>
 				<ParameterTable parametersData={params} />
 			</div>
 		</div>

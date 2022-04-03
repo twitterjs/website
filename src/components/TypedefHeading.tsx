@@ -7,7 +7,7 @@ export function TypedefHeading({ typedefItem }: TypedefHeadingPropsType) {
 
 	return (
 		<div>
-			<h1 className='flex justify-start text-3xl font-extrabold'>{typedefItem.name}</h1>
+			<h1 className='flex justify-start text-3xl font-extrabold text-black dark:text-gray-300'>{typedefItem.name}</h1>
 			{typedefItem.type ? (
 				<p className='flex justify-start'>
 					<span>extends</span>

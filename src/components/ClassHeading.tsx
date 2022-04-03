@@ -7,7 +7,7 @@ export function ClassHeading({ classItem }: ClassHeadingPropsType) {
 
 	return (
 		<div>
-			<h1 className='flex justify-start text-3xl font-extrabold'>{classItem.name}</h1>
+			<h1 className='flex justify-start text-3xl font-extrabold text-black dark:text-gray-300'>{classItem.name}</h1>
 			{classItem.extends ? (
 				<p className='flex justify-start'>
 					<span>extends</span>

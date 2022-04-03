@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function HeroBanner() {
 	return (
 		<div className='flex flex-col items-center gap-y-6 px-8 text-center sm:gap-y-7 md:gap-y-8 lg:gap-y-9'>
@@ -9,14 +11,18 @@ export function HeroBanner() {
 				with twitter.js &#8212; A Node.js and TypeScript library for interacting with Twitter API
 			</p>
 			<div className='flex flex-row justify-center gap-x-6'>
-				<a
-					href='https://twitterjs-guide.pages.dev/tutorial/installation'
-					target='_blank'
-					rel='noopener noreferrer'
-					className='rounded-md bg-blue-800 px-6 py-3 text-base font-medium text-gray-100'
+				<Link
+					to='/docs/twitter.js/main/getting-started/Introduction'
+					className='rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-gray-100'
+				>
+					Introduction
+				</Link>
+				<Link
+					to='/docs/twitter.js/main/getting-started/Installation'
+					className='rounded-md bg-green-600 px-6 py-3 text-base font-medium text-gray-100'
 				>
 					Get Started
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
