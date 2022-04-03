@@ -21,7 +21,7 @@ export function ParameterTable({ parametersData }: ParameterTablePropsType) {
 						return (
 							<tr
 								key={p.name}
-								className='border-y bg-blue-900/30 text-gray-300 first:border-t-0 last:border-b-0 dark:border-black/30'
+								className='border-y border-black/10 bg-blue-900/90 text-gray-300 first:border-t-0 last:border-b-0 dark:border-white/10 dark:bg-blue-900/50'
 							>
 								<td className='p-4'>
 									{p.name}

@@ -5,7 +5,7 @@ import { scopedName } from '../util';
 export function ClassOverview({ classItem }: ClassOverviewPropsType) {
 	return (
 		<div className='grid grid-cols-1 gap-3'>
-			<h1 className='text-left text-xl font-extrabold'>Overview</h1>
+			<h1 className='text-left text-xl font-extrabold text-black dark:text-gray-300'>Overview</h1>
 			<div className='grid gap-y-6 sm:grid-cols-2 md:grid-cols-3'>
 				{classItem.props?.length ? (
 					<div>
