@@ -12,7 +12,7 @@ export function GettingStarted() {
 		version: selectedVersion,
 	});
 	const { topic } = useParams<{ topic: string }>();
-	const content = topic && data?.custom['getting-started'].files[topic].content;
+	const content = topic && data?.custom['getting-started']?.files[topic]?.content;
 
 	return <Topic content={content} />;
 }
